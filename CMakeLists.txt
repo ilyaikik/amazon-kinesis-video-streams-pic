@@ -21,6 +21,8 @@ option(ALIGNED_MEMORY_MODEL "Aligned memory model ONLY." OFF)
 option(FIXUP_ANNEX_B_TRAILING_NALU_ZERO "Fix-up some bad encoder behavior leaving a trailing zero at the end of NALu" OFF)
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
+set(CMAKE_C_COMPILER_WORKS TRUE)
+
 execute_process(
         COMMAND git rev-parse HEAD
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
